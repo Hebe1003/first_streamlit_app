@@ -33,5 +33,7 @@ my_cur = my_cnx.cursor()
 my_cur.execute("SELECT * from fruit_load_list")
 my_data_row = my_cur.fetchall()
 streamlit.header("The fruit load list contains")
+
+streamlit.text_input('What fruit would you like information about?)
 streamlit.dataframe(my_data_row)
 
